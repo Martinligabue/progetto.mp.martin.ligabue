@@ -3,7 +3,7 @@ package hotel;
 import java.util.List;
 
 public class Reception {
-	Hotel universal = new Hotel();
+	Hotel2 universal = new Hotel2();
 
 	public void checkIn(Customer customer) { // pagamento Template method, prezzo
 
@@ -23,4 +23,4 @@ public class Reception {
 	public List<Customer> getCustomersList() {
 		return universal.customersList;
 	}
-}
+}//nookin on place?
