@@ -554,6 +554,7 @@ public class Fake {
 						System.out.println("Room doesn't exist");
 					break;
 				case 6:
+					sc.close();
 					break x;
 
 				}
@@ -565,7 +566,7 @@ public class Fake {
 					System.out.println("\nContinue : (y/n)");
 					wish = sc.next().charAt(0);
 				}
-
+				sc.close();
 			} while (wish == 'y' || wish == 'Y');
 
 			Thread t = new Thread(new write(Hotel2.hotel_ob));
@@ -573,5 +574,6 @@ public class Fake {
 		} catch (Exception e) {
 			System.out.println("Not a valid input");
 		}
+
 	}
 }
